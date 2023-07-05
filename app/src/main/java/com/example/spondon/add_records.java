@@ -198,7 +198,7 @@ public class add_records extends AppCompatActivity {
                 caltime.set(Calendar.HOUR_OF_DAY, hourOfDay);
                 caltime.set(Calendar.MINUTE, min);
 
-                String myFormat = "HH:mm:ss";
+                String myFormat = "hh:mm";
                 SimpleDateFormat simpleDateFormat = new SimpleDateFormat(myFormat);
                 timePicker.setText(simpleDateFormat.format(caltime.getTime()));
             }

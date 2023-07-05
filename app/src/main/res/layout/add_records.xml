@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/add">
+    android:id="@+id/add"
+    android:background="#b4cfca">
 
     <EditText
         android:id="@+id/systolic"
@@ -59,13 +60,11 @@
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:background="@drawable/edit_background"
-        android:clickable="false"
         android:drawableRight="@drawable/ic_baseline_edit_calendar_24"
         android:drawablePadding="30dp"
         android:ems="10"
         android:paddingLeft="10dp"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
+        android:inputType="text"
         android:hint="Date(click icon)"
         android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -80,13 +79,11 @@
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:background="@drawable/edit_background"
-        android:clickable="false"
         android:paddingLeft="10dp"
         android:drawableRight="@drawable/ic_baseline_watch_later_24"
         android:drawablePadding="30dp"
         android:ems="10"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
+        android:inputType="text"
         android:hint="Time(click icon)"
         android:paddingRight="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,14 +112,28 @@
 
     <Button
         android:id="@+id/confirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="153dp"
+        android:layout_height="64dp"
         android:text="Confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+        app:layout_constraintVertical_bias="0.939"
+        android:backgroundTint="#04595c"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/h" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
