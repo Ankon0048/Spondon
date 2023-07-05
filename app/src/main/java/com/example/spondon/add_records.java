@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
@@ -142,6 +143,27 @@ public class add_records extends AppCompatActivity {
         String tempdatePicker = datePicker.getText().toString();
         String temptimePicker = timePicker.getText().toString();
         String tempcomment = comment.getText().toString();
+
+        if(TextUtils.isEmpty(tempsystolic)){
+            Toast.makeText(add_records.this,"Must enter value",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(tempdiastolic)){
+            Toast.makeText(add_records.this,"Must enter value",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(tempheart)){
+            Toast.makeText(add_records.this,"Must enter value",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(tempdatePicker)){
+            Toast.makeText(add_records.this,"Must enter value",Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if(TextUtils.isEmpty(temptimePicker)){
+            Toast.makeText(add_records.this,"Must enter value",Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         String unique = sprecordDbRef.push().getKey();
 
