@@ -12,6 +12,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
     List<Item> items;
     DatabaseReference db;
     RecyclerView recyclerView;
+    ImageButton button;
+    FirebaseAuth auth;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,25 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setAdapter(adapter);
         add = findViewById(R.id.button);
+        button = findViewById(R.id.logoutButton);
+        auth = FirebaseAuth.getInstance();
+        user= auth.getCurrentUser();
+
+        if(user == null){
+            Intent intent = new Intent(getApplicationContext(),Login.class);
+            startActivity(intent);
+            finish();
+        }
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getApplicationContext(),Login.class);
+                startActivity(intent);
+                finish();
+         }
+    });
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override

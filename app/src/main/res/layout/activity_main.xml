@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:id="@+id/main">
+    android:id="@+id/main"
+    android:background="#b4cfca">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
@@ -16,13 +17,14 @@
         app:reverseLayout="false"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"/>
 
     <ImageButton
         android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/round_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/plus_button"
         android:src="@drawable/ic_baseline_add_24"
         app:layout_constraintBottom_toBottomOf="@+id/recyclerview"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +38,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:text="Button"
-        android:background="@drawable/round_button"
+        android:background="@drawable/logout_button"
         android:src="@drawable/ic_baseline_logout_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +46,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/h" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
