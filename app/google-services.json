@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "834609570219",
+    "firebase_url": "https://spondon-80e29-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "spondon-80e29",
+    "storage_bucket": "spondon-80e29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834609570219:android:e5f7a2060920e92cb132ee",
+        "android_client_info": {
+          "package_name": "com.example.spondon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834609570219-j28liimamj3d0sq9fmcb94defcl0s9lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC-6YZjE4lGOuwy1TtnGbWYrj5bUAH_ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834609570219-j28liimamj3d0sq9fmcb94defcl0s9lj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
