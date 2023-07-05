@@ -5,6 +5,7 @@ public class Item {
     String diastolic_blood_pressure;
     String heart_rate;
     String date;
+    String time;
 
     public String getDate() {
         return date;
@@ -22,7 +23,6 @@ public class Item {
         this.time = time;
     }
 
-    String time;
 
     public Item(String systolic_blood_pressure, String diastolic_blood_pressure, String heart_rate,String date, String time) {
         this.systolic_blood_pressure = systolic_blood_pressure;
