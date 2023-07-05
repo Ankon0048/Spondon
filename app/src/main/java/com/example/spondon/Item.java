@@ -6,13 +6,34 @@ public class Item {
     String heart_rate;
     String date;
     String time;
+    String key;
+    String comment;
 
     public String getDate() {
         return date;
     }
 
+    public Item() {
+    }
+
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
     }
 
     public String getTime() {
@@ -24,12 +45,14 @@ public class Item {
     }
 
 
-    public Item(String systolic_blood_pressure, String diastolic_blood_pressure, String heart_rate,String date, String time) {
+    public Item(String systolic_blood_pressure, String diastolic_blood_pressure, String heart_rate,String date, String time, String key, String comment) {
         this.systolic_blood_pressure = systolic_blood_pressure;
         this.diastolic_blood_pressure = diastolic_blood_pressure;
         this.heart_rate = heart_rate;
         this.date = date;
         this.time = time;
+        this.key = key;
+        this.comment = comment;
     }
 
 

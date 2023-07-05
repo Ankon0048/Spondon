@@ -17,7 +17,7 @@
         android:orientation="vertical"
         android:padding="20dp"
         android:elevation="8dp"
-        android:background="#ff7782">
+        android:background="#9DB1EA">
 
         <TextView
             android:id="@+id/date"
@@ -27,6 +27,8 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="8dp"
             android:text="Date"
+            android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+            android:drawablePadding="5dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,6 +45,8 @@
             android:layout_marginTop="3dp"
             android:layout_marginEnd="8dp"
             android:text="Time"
+            android:drawableRight="@drawable/ic_baseline_watch_later_24"
+            android:drawablePadding="5dp"
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -84,9 +88,9 @@
 
         <TextView
             android:id="@+id/systolic_blood_pressure"
-            android:layout_width="30dp"
+            android:layout_width="85dp"
             android:layout_height="30dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="180dp"
             android:layout_marginTop="2dp"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -99,9 +103,9 @@
 
         <TextView
             android:id="@+id/heart_rate"
-            android:layout_width="30dp"
+            android:layout_width="85dp"
             android:layout_height="30dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="180dp"
             android:layout_marginTop="13dp"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -129,9 +133,9 @@
 
         <TextView
             android:id="@+id/diastolic_blood_pressure"
-            android:layout_width="30dp"
+            android:layout_width="85dp"
             android:layout_height="30dp"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="180dp"
             android:layout_marginBottom="6dp"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -147,7 +151,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginBottom="8dp"
-            android:background="#0000ff"
+            android:background="@drawable/round_button"
             android:src="@drawable/ic_baseline_delete_forever_24"
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -159,13 +163,13 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/update"
+            android:id="@+id/edit"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
             android:layout_marginBottom="8dp"
-            android:background="#0000ff"
-            android:src="@drawable/ic_baseline_upgrade_24"
+            android:background="@drawable/round_button"
+            android:src="@drawable/ic_baseline_edit_24"
             android:padding="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -174,32 +178,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:drawableLeft="@drawable/ic_baseline_watch_later_24"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.997"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.004" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
