@@ -1,11 +1,14 @@
 package com.example.spondon;
 
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import org.w3c.dom.Text;
 
 public class MyViewHolder extends RecyclerView.ViewHolder {
     ImageView imageView;
@@ -14,6 +17,10 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     TextView heart_rates;
     TextView dates;
     TextView times;
+    ImageButton buttonEdit, buttonDelete;
+    TextView sys;
+    TextView dia;
+    TextView hrt;
 
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -22,5 +29,10 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
         heart_rates = itemView.findViewById(R.id.heart_rate);
         dates = itemView.findViewById(R.id.date);
         times = itemView.findViewById(R.id.time);
+        buttonEdit = itemView.findViewById(R.id.edit);
+        buttonDelete = itemView.findViewById(R.id.delete);
+        hrt = itemView.findViewById(R.id.hrt);
+        sys = itemView.findViewById(R.id.sys);
+        dia = itemView.findViewById(R.id.dia);
     }
 }
